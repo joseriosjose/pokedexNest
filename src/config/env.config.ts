@@ -1,0 +1,7 @@
+//CONFIGURACION DE VARIABLES DE ENTORNO PARA USAR DENTRO DE LA APP
+export const EnvConfiguration = () => ({
+  environment: process.env.NODE_ENV || 'dev',
+  mongodb: process.env.MONGODB,
+  port: process.env.PORT || 3002,
+  defaultLimit: process.env.DEFAULT_LIMIT || 7,
+});
